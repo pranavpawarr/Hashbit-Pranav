@@ -1,1 +1,142 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', sans-serif;
+        }
+        body {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #4a4a4a;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: gold;
+        }
+        .social-links a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .menubar {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+            color: white;
+        }
+        .menubar a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .menubar a:hover {
+            background-color: #34495e;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .content-box {
+            width: 30%;
+            border: 1px solid #ddd;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .content-box:hover {
+            transform: scale(1.05);
+        }
+        .content-box img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Golden Horizon Hotel</div>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </header>
+
+    <nav class="menubar">
+        <a href="#">Rooms</a>
+        <a href="#">Amenities</a>
+        <a href="#">Dining</a>
+        <a href="#">Reservations</a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Hotel Highlights</h3>
+            <p>Luxury accommodations with ocean views</p>
+            <p>Spa & wellness center</p>
+            <p>Gourmet restaurants</p>
+            <p>24/7 concierge service</p>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-box">
+                <h2>Deluxe Rooms</h2>
+                <img src="/api/placeholder/300/200" alt="Deluxe Room">
+                <p>Spacious rooms with modern amenities and stunning views.</p>
+            </div>
+            <div class="content-box">
+                <h2>Dining Experience</h2>
+                <img src="/api/placeholder/300/200" alt="Restaurant">
+                <p>World-class cuisine from our award-winning chefs.</p>
+            </div>
+            <div class="content-box">
+                <h2>Wellness Spa</h2>
+                <img src="/api/placeholder/300/200" alt="Spa">
+                <p>Relax and rejuvenate with our premium spa services.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 Golden Horizon Hotel | Luxury Accommodations</p>
+    </footer>
+</body>
+</html>
